@@ -1,0 +1,363 @@
+body {
+    background-color: #DDE7C7;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #77BFA3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #BFD8BD;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #98C9A3;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    padding: 10px;
+}
+
+main {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+
+aside {
+    width: 27%;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+    background-color: #EDEEC9;
+    text-align: center;
+}
+
+aside h2 {
+    padding: 10px;
+}
+
+aside img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+aside p {
+    margin-left: 90px;
+    padding: 20px 10px 0px 0px;
+    text-align: left;
+    font-family: 標楷體;
+    font-size: 20px;
+}
+
+section h2 {
+    padding: 10px;
+}
+
+section img {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+section div {
+    font-size: 10px;
+    text-align: center;
+}
+
+section p {
+    padding: 10px;
+    font-family: 標楷體;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #EDEEC9;
+}
+
+.clearfix {
+    clear: both;
+}
+
+p span {
+    float: left;
+    font-size: 18px;
+    font-family: 標楷體;
+}
+
+.progress-bar {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #FFADAD;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    48% {
+        width: 48%;
+    }
+}
+
+.progress-bar1 {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar1::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #FFD6A5;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress1 {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 40%;
+    }
+}
+
+.progress-bar2 {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar2::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #FFC6FF;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress2 {
+    0% {
+        width: 0;
+    }
+
+    45% {
+        width: 45%;
+    }
+}
+
+.progress-bar3 {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar3::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #BDB2FF;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress3 {
+    0% {
+        width: 0;
+    }
+
+    80% {
+        width: 80%;
+    }
+}
+
+.progress-bar4 {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar4::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #A0C4FF;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress4;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress4 {
+    0% {
+        width: 0;
+    }
+
+    70% {
+        width: 70%;
+    }
+}
+
+.progress-bar5 {
+    border-radius: 25px;
+    width: 200px;
+    /* 进度条宽度 */
+    height: 15px;
+    /* 进度条高度 */
+    background-color: #ddd;
+    /* 进度条底色 */
+    position: relative;
+    /* 定位 */
+    color: #444444;
+}
+
+.progress-bar5::before {
+    border-radius: 25px;
+    content: "";
+    width: 0;
+    /* 初始宽度为0 */
+    height: 100%;
+    background-color: #CAFFBF;
+    /* 进度条颜色 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    animation-name: progress5;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* 动画 */
+}
+
+@keyframes progress5 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+    }
+}
